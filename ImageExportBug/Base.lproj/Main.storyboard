@@ -53,7 +53,7 @@
                         <constraints>
                             <constraint firstItem="niz-sU-Q5V" firstAttribute="leading" secondItem="dKv-QS-23m" secondAttribute="leading" id="2Br-bi-AQC"/>
                             <constraint firstAttribute="leadingMargin" secondItem="dKv-QS-23m" secondAttribute="leading" id="CTI-fI-QxW"/>
-                            <constraint firstItem="dKv-QS-23m" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="GwQ-6K-dgB"/>
+                            <constraint firstItem="dKv-QS-23m" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="GwQ-6K-dgB"/>
                             <constraint firstItem="0p6-ae-WJ1" firstAttribute="centerY" secondItem="jYv-yY-WeI" secondAttribute="centerY" id="M0g-we-vHw"/>
                             <constraint firstItem="niz-sU-Q5V" firstAttribute="top" secondItem="dKv-QS-23m" secondAttribute="bottom" constant="20" id="MHs-pH-c6k"/>
                             <constraint firstItem="41S-IZ-S5Y" firstAttribute="centerY" secondItem="niz-sU-Q5V" secondAttribute="centerY" id="RCp-fm-dKW"/>

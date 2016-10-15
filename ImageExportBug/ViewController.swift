@@ -13,18 +13,14 @@ class ViewController: UIViewController {
     @IBOutlet weak var useNSData: UISwitch!
     @IBOutlet weak var stepper: UIStepper!
     @IBOutlet weak var labelCount: UILabel!
-    
+    @IBOutlet weak var sharePressed: UIButton!
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+
+        labelCount.text = "\(stepper.value)"
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
-    @IBOutlet weak var sharePressed: UIButton!
     @IBAction func stepperChange(_ sender: UIStepper) {
         labelCount.text = "\(sender.value)"
     }
