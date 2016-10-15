@@ -1,14 +1,16 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ImageExportBug" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -16,8 +18,57 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MvU-8Q-Qci">
+                                <frame key="frameInset" minX="173" minY="637" width="40" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Share"/>
+                                <connections>
+                                    <action selector="sharePressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="83n-8j-NKA"/>
+                                </connections>
+                            </button>
+                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="jYv-yY-WeI">
+                                <connections>
+                                    <action selector="stepperChange:" destination="BYZ-38-t0r" eventType="valueChanged" id="URv-ag-sZb"/>
+                                </connections>
+                            </stepper>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Use NSData?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="niz-sU-Q5V">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Count" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dKv-QS-23m">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0p6-ae-WJ1">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="41S-IZ-S5Y"/>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="niz-sU-Q5V" firstAttribute="leading" secondItem="dKv-QS-23m" secondAttribute="leading" id="2Br-bi-AQC"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="dKv-QS-23m" secondAttribute="leading" id="CTI-fI-QxW"/>
+                            <constraint firstItem="dKv-QS-23m" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="GwQ-6K-dgB"/>
+                            <constraint firstItem="0p6-ae-WJ1" firstAttribute="centerY" secondItem="jYv-yY-WeI" secondAttribute="centerY" id="M0g-we-vHw"/>
+                            <constraint firstItem="niz-sU-Q5V" firstAttribute="top" secondItem="dKv-QS-23m" secondAttribute="bottom" constant="20" id="MHs-pH-c6k"/>
+                            <constraint firstItem="41S-IZ-S5Y" firstAttribute="centerY" secondItem="niz-sU-Q5V" secondAttribute="centerY" id="RCp-fm-dKW"/>
+                            <constraint firstItem="41S-IZ-S5Y" firstAttribute="leading" secondItem="niz-sU-Q5V" secondAttribute="trailing" constant="36" id="VOC-Ps-Pdf"/>
+                            <constraint firstItem="jYv-yY-WeI" firstAttribute="centerY" secondItem="dKv-QS-23m" secondAttribute="centerY" id="qTS-re-ew7"/>
+                            <constraint firstItem="jYv-yY-WeI" firstAttribute="leading" secondItem="dKv-QS-23m" secondAttribute="trailing" constant="91" id="u3j-hk-HOL"/>
+                            <constraint firstItem="0p6-ae-WJ1" firstAttribute="leading" secondItem="jYv-yY-WeI" secondAttribute="trailing" constant="30" id="voB-wi-zWg"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="labelCount" destination="0p6-ae-WJ1" id="8g3-pb-HJb"/>
+                        <outlet property="sharePressed" destination="MvU-8Q-Qci" id="EBx-g6-BpQ"/>
+                        <outlet property="stepper" destination="jYv-yY-WeI" id="f5J-Gw-6N6"/>
+                        <outlet property="useNSData" destination="41S-IZ-S5Y" id="yTj-u6-lwT"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

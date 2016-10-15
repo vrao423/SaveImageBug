@@ -12,6 +12,7 @@
 		825E7AC21DB1CAE500D7D5C8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 825E7AC01DB1CAE500D7D5C8 /* Main.storyboard */; };
 		825E7AC41DB1CAE500D7D5C8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 825E7AC31DB1CAE500D7D5C8 /* Assets.xcassets */; };
 		825E7AC71DB1CAE500D7D5C8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 825E7AC51DB1CAE500D7D5C8 /* LaunchScreen.storyboard */; };
+		829CD31B1DB1CF2300E87E56 /* wide.png in Resources */ = {isa = PBXBuildFile; fileRef = 829CD31A1DB1CF2300E87E56 /* wide.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		825E7AC31DB1CAE500D7D5C8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		825E7AC61DB1CAE500D7D5C8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		825E7AC81DB1CAE500D7D5C8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		829CD31A1DB1CF2300E87E56 /* wide.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wide.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +59,7 @@
 				825E7ABC1DB1CAE500D7D5C8 /* AppDelegate.swift */,
 				825E7ABE1DB1CAE500D7D5C8 /* ViewController.swift */,
 				825E7AC01DB1CAE500D7D5C8 /* Main.storyboard */,
+				829CD31A1DB1CF2300E87E56 /* wide.png */,
 				825E7AC31DB1CAE500D7D5C8 /* Assets.xcassets */,
 				825E7AC51DB1CAE500D7D5C8 /* LaunchScreen.storyboard */,
 				825E7AC81DB1CAE500D7D5C8 /* Info.plist */,
@@ -96,6 +99,7 @@
 				TargetAttributes = {
 					825E7AB81DB1CAE500D7D5C8 = {
 						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = GH3628GD63;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -123,6 +127,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				829CD31B1DB1CF2300E87E56 /* wide.png in Resources */,
 				825E7AC71DB1CAE500D7D5C8 /* LaunchScreen.storyboard in Resources */,
 				825E7AC41DB1CAE500D7D5C8 /* Assets.xcassets in Resources */,
 				825E7AC21DB1CAE500D7D5C8 /* Main.storyboard in Resources */,
@@ -258,6 +263,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = GH3628GD63;
 				INFOPLIST_FILE = ImageExportBug/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = RS.ImageExportBug;
@@ -270,6 +276,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = GH3628GD63;
 				INFOPLIST_FILE = ImageExportBug/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = RS.ImageExportBug;
@@ -297,6 +304,7 @@
 				825E7ACD1DB1CAE500D7D5C8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
